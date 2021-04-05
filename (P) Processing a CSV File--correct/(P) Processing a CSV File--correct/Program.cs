@@ -45,7 +45,7 @@ namespace _P__Processing_a_CSV_File__correct
                     string status = pieces[6];
                     int year = Convert.ToInt32(pieces[9]);
                     int month = Convert.ToInt32(pieces[8]);
-                    double sales = Convert.ToInt32(pieces[4]);
+                    double sales = Convert.ToDouble(pieces[4]);
 
                     if (pieces[6].ToLower() == "shipped")
                     {

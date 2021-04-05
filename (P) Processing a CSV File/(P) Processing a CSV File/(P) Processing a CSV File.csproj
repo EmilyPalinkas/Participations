@@ -6,4 +6,10 @@
     <RootNamespace>_P__Processing_a_CSV_File</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="sales_data_sample.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
