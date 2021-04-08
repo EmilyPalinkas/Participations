@@ -7,25 +7,24 @@ namespace _P__Simple_Method__Speak_
         static void Main(string[] args)
         {
 
-            /*string dogNoise = "woof";
-            string catNoise = "meow";
-            string cowNoise = "moo";*/
+           
 
             string answer;
 
             do
             {
                 Console.WriteLine("Enter a type of animal");
-                string animal = Console.ReadLine();
+                string animal = Console.ReadLine().ToLower();
 
-                Speak(animal);
+                string sound = Speak(animal);
+                Console.WriteLine(sound);
 
                 Console.WriteLine("Do you want to hear another animal? >>");
-                answer = Console.ReadLine().ToLower();
+                answer = Console.ReadLine();
 
             } while (answer[0] == 'y');
 
-
+            Console.WriteLine("bye");
         }
 
         static string Speak(string animal)
@@ -36,20 +35,20 @@ namespace _P__Simple_Method__Speak_
             if (animal == "dog")
             {
                 sound = "woof";
-                Console.WriteLine($"dog makes the sound {sound}");
             }
             else if (animal == "cat")
             {
                 sound = "meow";
-                Console.WriteLine($"cat makes the sound {sound}");
-
             }
             else if (animal == "cow")
              {
                 sound = "moo";
-                Console.WriteLine($"cow makes the sound {sound}");
-
             }
+            else
+            {
+                sound = "blah blah blah";
+            }
+            return sound;
                 
          }
 
