@@ -53,7 +53,7 @@ namespace _P__Functions___Calculator
                     Console.WriteLine($"{number1.ToString("N")} / {number2.ToString("N")} = {calculation.ToString("N")}");
                 }
 
-                // new calc
+                // new calc 
 
                 Console.WriteLine($"A: would you like to perform a new calculation, B: use {calculation.ToString("N")} in a new calculation.");
                 whatNext = Convert.ToChar(Console.ReadLine().ToUpper());
